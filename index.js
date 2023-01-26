@@ -1,16 +1,45 @@
 const inquirer = require('inquirer')
 const fs = require('fs')
-const path = require('path')
 
 // Requiring the classes
-const manager = require('./lib/manager')
-const engineer = require('./lib/engineer')
-const intern = require('./lib/intern')
+const Manager = require('./lib/Manager')
+const Engineer = require('./lib/Engineer')
+const Intern = require('./lib/Intern')
+const render = require('./src/renderHtml')
+const internal = require('stream')
+let team = []
 
-// Requiring the cards
-const managerCard = require('./templates/managerhtml')
-const engineerCard = require('./templates/engineerhtml')
-const internCard = require('./templates/internhtml')
 
-// Variable for everyone on team
-const fullTeam = [];
+
+function managerInfo(){
+    inquirer
+        .prompt([
+            {
+                type: 'input',
+                message: 'Who is the manager?',
+                name: 'managerName',
+            },
+            {
+                type: 'input',
+                message: 'What is their email?',
+                name: 'email',
+            },
+            {
+                type: 'input',
+                message: 'What is their office phone number? Add ext number if available. ',
+                name: 'officePhone',
+            },
+            {
+                type: 'input',
+                message: 'What is their employee ID number?',
+                name: 'badgeID',
+            },
+
+        ])
+            .then((response) => {
+                const manager = new Manager(response.managerName, response.email, response.officePhone, response.badgeID)
+                team.push(manager)
+
+                addEmployee();
+            })
+}
