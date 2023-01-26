@@ -78,3 +78,36 @@ const addEmployee = () => {
             }
         })
 }
+
+const engineerInfo = () => {
+    inquirer
+        .prompt([
+            {
+                type: 'input',
+                message: 'Who is the engineer?',
+                name: 'engineerName',
+            },
+            {
+                type: 'input',
+                message: 'What is their email?',
+                name: 'engineerEmail',
+            },
+            {
+                type: 'input',
+                message: 'What is their employee Id number?',
+                name: 'engineerID',
+            },
+            {
+                type: 'input',
+                message: 'What is their Github username?',
+                name: 'GitHub',
+            },
+
+        ])
+        .then((response) => {
+            const engineer = new Engineer(response.engineerName, response.engineerEmail, response.engineerID, response.GitHub)
+            team.push(engineer)
+
+            addEmployee();
+        })
+}
