@@ -111,3 +111,33 @@ const engineerInfo = () => {
             addEmployee();
         })
 }
+
+const internInfo = () => {
+    inquirer
+        .prompt([
+            {
+                type: 'input',
+                message: 'Who is the intern?',
+                name: 'internName',
+            },
+            {
+                type: 'input',
+                message: 'What is their email?',
+                name: 'internEmail',
+            },
+            {
+                type: 'input',
+                message: 'What school do they attend?',
+                name: 'internSchool',
+            },
+        ])
+        .then((response) => {
+            const intern = new Intern(response.internName, response.internEmail, response.internSchool)
+            team.push(intern)
+
+            addEmployee();
+        })
+
+}
+
+managerInfo();
