@@ -7,7 +7,7 @@ const Engineer = require('./lib/Engineer')
 const Intern = require('./lib/Intern')
 const render = require('./src/renderHtml')
 const internal = require('stream')
-let team = []
+let team = [];
 
 
 
