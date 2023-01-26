@@ -1,5 +1,27 @@
 {
   "dependencies": {
     "inquirer": "^8.2.4"
-  }
+  },
+  "name": "build-myteam",
+  "description": "# Table of Contents - Description - Installation Instructions - GitHub Account - Contacts - Code Snippets - Resources - Credits",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashrean/build-MyTeam.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashrean/build-MyTeam/issues"
+  },
+  "homepage": "https://github.com/ashrean/build-MyTeam#readme"
 }
