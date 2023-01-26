@@ -43,3 +43,38 @@ function managerInfo(){
                 addEmployee();
             })
 }
+
+const addEmployee = () => {
+    inquirer
+        .prompt([
+            {
+                type: 'list',
+                message: 'What employee do you want to add?',
+                name: 'newEmployee',
+                choices: [
+                    'Engineer',
+                    'Intern',
+                    'None'
+                ]
+            }
+
+        ])
+        .then(response => {
+            switch (response.newEmployee){
+                case 'Engineer':
+
+                    engineerInfo();
+                    break;
+                case 'Intern':
+
+                    internInfo();
+                    break;
+                case 'None':
+                    let teamData = render(team)
+                    fs.writeFile('./src/team.html', teamData, (err) =>
+                    err ? console.log(err) : console.log('Team has been created.'))
+                    break;
+
+            }
+        })
+}
