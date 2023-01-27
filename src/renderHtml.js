@@ -57,7 +57,7 @@ const generateTeam = (team) => {
       <h6 class="card-subtitle mb-2 text-muted">Engineer</h6>
       <p class="card-text">ID: ${engineerInfo.id}</p>
       <p>Email: <a href="mailto:${engineerInfo.email}"> ${engineerInfo.email}</a> </p>
-      <p class="card-text">GitHub Username: ${engineerInfo.GitHub}</p>
+      <p class="card-text">GitHub Username: <a href="https://github.com/${engineerInfo.GitHub}">${engineerInfo.GitHub}</a></p>
       </div>
     </div>
 `;
