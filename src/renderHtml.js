@@ -12,8 +12,6 @@ const generateTeam = (team) => {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="../node_modules/bulma/css/bulma.css">
     <title>Build The Team</title>
 </head>
 <body>
@@ -39,13 +37,13 @@ const generateTeam = (team) => {
     // Render the deatails of the postitions of the employess on to the page
     const renderMang = (managerInfo) => {
         return `
-    <div class="card row align-items-center" style="width: 18rem;">
-    <div class="card-body col">
+    <div class="card row align-items-center " style="width: 20rem; mx-1">
+    <div class="card-body col ">
       <h5 class="card-title">${managerInfo.name}</h5>
       <h6 class="card-subtitle mb-2 text-muted">Manager</h6>
       <p class="card-text">ID: ${managerInfo.id}</p>
       <p>Email: <a href="mailto:${managerInfo.email}"> ${managerInfo.email}</a> </p>
-      <p class="card-text">Office Number: ${managerInfo.officePhone}</p>
+      <p class="card-text">Office Phone Number: ${managerInfo.officePhone}</p>
       </div>
     </div>
 `;
@@ -53,8 +51,8 @@ const generateTeam = (team) => {
     // Same for Engineer
     const renderEngineer = (engineerInfo) => {
         return `
-    <div class="card row align-items-center" style="width: 18rem;">
-    <div class="card-body col">
+    <div class="card row align-items-center" style="width: 20rem; mx-1">
+    <div class="card-body col ">
       <h5 class="card-title">${engineerInfo.name}</h5>
       <h6 class="card-subtitle mb-2 text-muted">Engineer</h6>
       <p class="card-text">ID: ${engineerInfo.id}</p>
@@ -67,8 +65,8 @@ const generateTeam = (team) => {
     // Same for Intern
     const renderInter = (internInfo) => {
         return `
-    <div class="card row align-items-center" style="width: 18rem;">
-    <div class="card-body col">
+    <div class="card row align-items-center" style="width: 20rem; mx-1">
+    <div class="card-body col ">
       <h5 class="card-title">${internInfo.name}</h5>
       <h6 class="card-subtitle mb-2 text-muted">Intern</h6>
       <p class="card-text">ID: ${internInfo.id}</p>
