@@ -37,7 +37,12 @@ function managerInfo(){
 
         ])
             .then((response) => {
-                const manager = new Manager(response.managerName, response.email, response.officePhone, response.badgeID)
+                const manager = new Manager(
+                    response.managerName,
+                    response.badgeID,
+                    response.email,
+                    response.officePhone,
+                )
                 team.push(manager)
 
                 addEmployee();
@@ -105,7 +110,12 @@ const engineerInfo = () => {
 
         ])
         .then((response) => {
-            const engineer = new Engineer(response.engineerName, response.engineerEmail, response.engineerID, response.GitHub)
+            const engineer = new Engineer(
+                response.engineerName,
+                response.engineerID,
+                response.engineerEmail,
+                response.GitHub,
+            )
             team.push(engineer)
 
             addEmployee();
@@ -127,12 +137,23 @@ const internInfo = () => {
             },
             {
                 type: 'input',
+                message: 'What is their employee Id number?',
+                name: 'internID',
+            },
+            {
+                type: 'input',
                 message: 'What school do they attend?',
                 name: 'internSchool',
             },
+
         ])
         .then((response) => {
-            const intern = new Intern(response.internName, response.internEmail, response.internSchool)
+            const intern = new Intern(
+                response.internName,
+                response.internID,
+                response.internEmail,
+                response.internSchool,
+            )
             team.push(intern)
 
             addEmployee();

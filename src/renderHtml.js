@@ -40,9 +40,9 @@ const generateTeam = (team) => {
         return `
     <div class="card row align-items-center" style="width: 18rem;">
     <div class="card-body col">
-      <h5 class="card-title">${managerInfo.managerName}</h5>
+      <h5 class="card-title">${managerInfo.name}</h5>
       <h6 class="card-subtitle mb-2 text-muted">Manager</h6>
-      <p class="card-text">ID: ${managerInfo.badgeID}</p>
+      <p class="card-text">ID: ${managerInfo.id}</p>
       <p>Email: <a href="mailto:${managerInfo.email}"> ${managerInfo.email}</a> </p>
       <p class="card-text">Office Number: ${managerInfo.officePhone}</p>
       </div>
@@ -54,10 +54,10 @@ const generateTeam = (team) => {
         return `
     <div class="card row align-items-center" style="width: 18rem;">
     <div class="card-body col">
-      <h5 class="card-title">${engineerInfo.engineerName}</h5>
+      <h5 class="card-title">${engineerInfo.name}</h5>
       <h6 class="card-subtitle mb-2 text-muted">Engineer</h6>
-      <p class="card-text">ID: ${engineerInfo.engineerID}</p>
-      <p>Email: <a href="mailto:${engineerInfo.engineerEmail}"> ${engineerInfo.engineerEmail}</a> </p>
+      <p class="card-text">ID: ${engineerInfo.id}</p>
+      <p>Email: <a href="mailto:${engineerInfo.email}"> ${engineerInfo.email}</a> </p>
       <p class="card-text">GitHub Username: ${engineerInfo.GitHub}</p>
       </div>
     </div>
@@ -68,10 +68,11 @@ const generateTeam = (team) => {
         return `
     <div class="card row align-items-center" style="width: 18rem;">
     <div class="card-body col">
-      <h5 class="card-title">${internInfo.internName}</h5>
+      <h5 class="card-title">${internInfo.name}</h5>
       <h6 class="card-subtitle mb-2 text-muted">Intern</h6>
-      <p>Email: <a href="mailto:${internInfo.internEmail}"> ${internInfo.internEmail}</a> </p>
-      <p class="card-text">School: ${internInfo.internSchool}</p>
+      <p class="card-text">ID: ${internInfo.id}</p>
+      <p>Email: <a href="mailto:${internInfo.email}"> ${internInfo.email}</a> </p>
+      <p class="card-text">School: ${internInfo.school}</p>
       </div>
     </div>
 `;
