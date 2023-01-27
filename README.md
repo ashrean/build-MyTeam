@@ -32,7 +32,7 @@ Since we are running the application on Node, there is a few steps that we need 
 - [Linkedin](https://www.linkedin.com/in/ashleyrean/)
 
 # Images
-!["./assets"]
+![alt text](./assets/Screenshot%202023-01-26%20at%2010.33.49%20PM.png)
 
 # Code Snippets
 - This section of code shows the when the user navigates between adding Intern, Engineer or None(completes team). Its letting you know once it writes to file, if there is an error console that error otherwise it will console.log the string.
