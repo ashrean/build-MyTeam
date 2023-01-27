@@ -27,7 +27,7 @@ Since we are running the application on Node, there is a few steps that we need 
 
 
 # Contacts
-- Email - sese.ashrean@gmail.com
+- [Email](sese.ashrean@gmail.com)
 
 - [Linkedin](https://www.linkedin.com/in/ashleyrean/)
 
