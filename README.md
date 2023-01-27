@@ -16,23 +16,23 @@ This project is designed to generate a team profile for Manager, Engineer, and I
 
 # Installtion Instructions
 Since we are running the application on Node, there is a few steps that we need todo.
-    - clone the repo to your own local machine and run it from your command line.
-    - Then, make sure the repo includes a package.json with the required dependencies. You can create one by running `npm init` in your command line.
-    - Run `npm i` or `npm install` to dowload all the dependencies. Please make sure to also download Inquirer.js by entering `npm install inquirer` in your terminal in the root directory of the projec.
-    - Run `node index.js` in your terminal to launch the application, the first prompt will appear in yoour terminal.
-    - To make sure Jest works, run `npm run test` and inspect what returns.
+- clone the repo to your own local machine and run it from your command line.
+- Then, make sure the repo includes a package.json with the required dependencies. You can create one by running `npm init` in your command line.
+- Run `npm i` or `npm install` to dowload all the dependencies. Please make sure to also download Inquirer.js by entering `npm install inquirer` in your terminal in the root directory of the projec.
+- Run `node index.js` in your terminal to launch the application, the first prompt will appear in yoour terminal.
+- To make sure Jest works, run `npm run test` and inspect what returns.
 
 # Github Account
-URL [https://github.com/ashrean]
+[GitHub](https://github.com/ashrean)
 
 
 # Contacts
 - Email - sese.ashrean@gmail.com
 
-- Linkedin - https://www.linkedin.com/in/ashleyrean/
+- [Linkedin](https://www.linkedin.com/in/ashleyrean/)
 
 # Images
-!["./assets]
+!["./assets"]
 
 # Code Snippets
 - This section of code shows the when the user navigates between adding Intern, Engineer or None(completes team). Its letting you know once it writes to file, if there is an error console that error otherwise it will console.log the string.
@@ -59,4 +59,4 @@ URL [https://github.com/ashrean]
 # Credits
 - Josshy O. (Tutor)
 - Edwin H.
-- Solomon S. 
+- Solomon S.
